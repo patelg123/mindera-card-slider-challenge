@@ -1,0 +1,41 @@
+a {
+    text-decoration: none;
+}
+
+.card{
+    line-height: 19px;
+    font-family: Arial;
+    vertical-align: bottom;
+    width: 308px;
+    background-color: #FFFFFF;
+}
+
+.card__img {
+  width: 300px;
+}
+
+.card__title {
+    color: #3A3A3A;
+    font-size: 23px;
+    font-style: bold;
+    padding-top: 19px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.card__subtitle {
+    color: #ADADAD;
+    font-size: 12px;
+    font-style: bold;
+    text-transform: uppercase;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.card__text {
+    color: #3A3A3A;
+    font-size: 12px;
+    line-height: 1.583;
+    padding-left: 19px;
+    padding-right: 19px;
+}
