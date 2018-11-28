@@ -9,7 +9,7 @@ class CardContainer extends Component {
       <div className="card-container">
         {
           this.props.data.map(card => (
-            <Card card={card} />
+            <Card key={card.id} card={card} />
           ))
         }
       </div>

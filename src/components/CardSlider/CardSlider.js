@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CardContainer from '../CardContainer/CardContainer';
+import CardContainer from './CardContainer/CardContainer';
 import './CardSlider.css';
 import green_arrow_left from './images/green_arrow_left.png';
 import green_arrow_right from './images/green_arrow_right.png';
@@ -45,7 +45,7 @@ class CardSlider extends Component {
           });
         }
       )
-    }
+  }
 
   handleRightClick = () => {
 
@@ -86,8 +86,8 @@ class CardSlider extends Component {
          <div className="container">
           <CardContainer data={data} />
           <div>
-            <img src={green_arrow_left}  onClick={() => this.handleLeftClick()} />
-            <img src={green_arrow_right} onClick={() => this.handleRightClick()} />
+            <img src={green_arrow_left} alt="green arrow left" onClick={() => this.handleLeftClick()} />
+            <img src={green_arrow_right} alt="green arrow right" onClick={() => this.handleRightClick()} />
           </div>
          </div>
        );
