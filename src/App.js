@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <CardSlider />
+        <CardSlider NumberOfCards={3} />
       </div>
     );
   }
