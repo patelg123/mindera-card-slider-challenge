@@ -2,6 +2,13 @@
     background-color: #F6F6F6;
     border-style: groove;
     border-width: 1px;
-    border-color: #D3D3D3;
-    
+    /*border-color: #D3D3D3;*/
+    border-style: solid;
+    border-color: red;
+    display: inline-block;
+}
+
+.arrow_container{
+  margin-bottom: 26px;
+  text-align: center;
 }

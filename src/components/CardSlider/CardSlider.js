@@ -85,7 +85,7 @@ class CardSlider extends Component {
 
          <div className="container">
           <CardContainer data={data} />
-          <div>
+          <div className="arrow_container">
             <img src={green_arrow_left} alt="green arrow left" onClick={() => this.handleLeftClick()} />
             <img src={green_arrow_right} alt="green arrow right" onClick={() => this.handleRightClick()} />
           </div>

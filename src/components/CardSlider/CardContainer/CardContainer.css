@@ -1,6 +1,17 @@
 .card-container{
-    border-width: 1px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
     display: flex;
-    flex-direction: row;
-    margin: 26px;
+    flex-flow: row;
+    justify-content: center;
+    margin-right: 26px;
+    margin-top:26px;
+}
+
+@media (max-width: 1000px) {
+    .card-container{
+      flex-flow: column;
+    }
+
 }
