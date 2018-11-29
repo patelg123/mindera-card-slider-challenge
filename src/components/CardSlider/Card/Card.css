@@ -7,11 +7,15 @@ a {
     font-family: Arial;
     vertical-align: bottom;
     width: 308px;
+    height: auto;
     background-color: #FFFFFF;
+    border: 3;
+    margin-left: 26px;
+    margin-bottom: 26px;
 }
 
 .card__img {
-  width: 300px;
+  width: 308px;
 }
 
 .card__title {
@@ -30,6 +34,7 @@ a {
     text-transform: uppercase;
     padding-left: 19px;
     padding-right: 19px;
+    padding-bottom: 19px;
 }
 
 .card__text {
@@ -38,4 +43,5 @@ a {
     line-height: 1.583;
     padding-left: 19px;
     padding-right: 19px;
+    padding-bottom: 19px;
 }

@@ -1,6 +1,14 @@
 .card-container{
-    border-width: 1px;
     display: flex;
-    flex-direction: row;
-    margin: 26px;
+    flex-flow: row;
+    justify-content: center;
+    margin-right: 26px;
+    margin-top:26px;
+}
+
+@media (max-width: 1000px) {
+    .card-container{
+      flex-flow: column;
+    }
+
 }

@@ -14,9 +14,9 @@
       "title": "We work together",
       "subtitle": "Would you like to join us?",
       "text": "We insist on working collaborativelly. <strong>No rockstars</strong>. No departments. The whole owns the whole project together.",
-      "image_url": "https://picsum.photos/300/150/?random",
+      "image_url": "https://picsum.photos/300/150/?image=190",
       "href": "https://mindera.com/people-and-culture/we-work-together/",
-      "is_liked": true
+      "is_liked": false
     },
     {
       "id": 3,
@@ -58,7 +58,7 @@
       "text": "Humans are not perfect. Don’t be afraid to fail. And when you do, you might as well fail spectacularly. This is how we grow and learn.",
       "image_url": "https://picsum.photos/300/150/?random",
       "href": "https://mindera.com/people-and-culture/faq/",
-      "is_liked": false
+      "is_liked": true
     },
     {
       "id": 8,
@@ -67,7 +67,7 @@
       "text": "Humans are unique. Do you love Portugueses Pop Music (<em>Pimba</em>)? Do you prefer your desk covered with sunflowers? There’s no need to hide it. Be yourself. That’s how you’ll fit in here.",
       "image_url": "https://picsum.photos/300/150/?random",
       "href": "https://mindera.com/people-and-culture/faq/",
-      "is_liked": false
+      "is_liked": true
     },
     {
       "id": 9,
