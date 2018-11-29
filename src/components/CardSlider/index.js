@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import CardContainer from './CardContainer/CardContainer';
+import CardContainer from './CardContainer';
 import './CardSlider.css';
-import green_arrow_left from './images/green_arrow_left.png';
-import green_arrow_right from './images/green_arrow_right.png';
+import greenArrowLeft from './images/green_arrow_left.png';
+import greenArrowRight from './images/green_arrow_right.png';
 
 const restURL = 'http://localhost:3001/cards?';
 
@@ -14,9 +14,9 @@ class CardSlider extends Component {
             error: null,
             isLoaded: false,
             data: [],
-            NumberOfCards: (this.props.NumberOfCards < 1) ? 3 : this.props.NumberOfCards,
-            CurrentCardStart: 0,
-            CurrentCardEnd: 3
+            numberOfCards: (this.props.numberOfCards < 1) ? 3 : this.props.numberOfCards,
+            currentCardStart: 0,
+            currentCardEnd: 3
         };
     }
 
@@ -34,8 +34,8 @@ class CardSlider extends Component {
                         this.setState({
                             isLoaded: true,
                             data: result,
-                            CurrentCardStart: cardStart,
-                            CurrentCardEnd: cardEnd
+                            currentCardStart: cardStart,
+                            currentCardEnd: cardEnd
                         });
                     }
                 },
@@ -50,24 +50,24 @@ class CardSlider extends Component {
 
     handleRightClick() {
 
-        let cardStart = this.state.CurrentCardEnd;
-        let cardEnd = this.state.NumberOfCards + this.state.CurrentCardEnd;
+        let cardStart = this.state.currentCardEnd;
+        let cardEnd = this.state.numberOfCards + this.state.currentCardEnd;
 
         this.loadData(cardStart, cardEnd);
     }
 
     handleLeftClick() {
 
-        let cardStart = this.state.CurrentCardStart - this.state.NumberOfCards;
-        let cardEnd = this.state.CurrentCardStart;
+        let cardStart = this.state.currentCardStart - this.state.numberOfCards;
+        let cardEnd = this.state.currentCardStart;
 
         this.loadData(cardStart, cardEnd);
     }
 
     componentDidMount() {
 
-        let cardStart = this.state.CurrentCardStart;
-        let cardEnd = this.state.NumberOfCards;
+        let cardStart = this.state.currentCardStart;
+        let cardEnd = this.state.numberOfCards;
 
         this.loadData(cardStart, cardEnd);
     }
@@ -87,8 +87,8 @@ class CardSlider extends Component {
                 <div className="container">
                     <CardContainer data={data} />
                     <div className="arrow_container">
-                        <img src={green_arrow_left} alt="green arrow left" onClick={() => this.handleLeftClick()} />
-                        <img src={green_arrow_right} alt="green arrow right" onClick={() => this.handleRightClick()} />
+                        <img src={greenArrowLeft} alt="green arrow left" onClick={() => this.handleLeftClick()} />
+                        <img src={greenArrowRight} alt="green arrow right" onClick={() => this.handleRightClick()} />
                     </div>
                 </div>
             );
@@ -97,7 +97,7 @@ class CardSlider extends Component {
 }
 
 CardSlider.propTypes = {
-    NumberOfCards: PropTypes.number
+    numberOfCards: PropTypes.number
 };
 
 export default CardSlider;

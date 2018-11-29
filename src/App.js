@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CardSlider from './components/CardSlider/CardSlider';
+import CardSlider from './components/CardSlider';
 import './App.css';
 
 
@@ -7,7 +7,7 @@ class App extends Component {
     render() {
         return (
             <div className="app">
-                <CardSlider NumberOfCards={3} />
+                <CardSlider numberOfCards={3} />
             </div>
         );
     }
