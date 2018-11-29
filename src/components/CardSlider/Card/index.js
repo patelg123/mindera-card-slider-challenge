@@ -101,7 +101,7 @@ class Card extends Component {
 
 Card.propTypes = {
     card: PropTypes.shape({
-        is_liked: PropTypes.string,
+        is_liked: PropTypes.bool,
         title: PropTypes.string,
         image_url: PropTypes.string,
         href: PropTypes.string,

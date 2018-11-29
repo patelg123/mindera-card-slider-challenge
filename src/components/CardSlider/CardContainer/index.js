@@ -19,7 +19,7 @@ class CardContainer extends Component {
 }
 
 CardContainer.propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.array.isRequired,
 };
 
 
