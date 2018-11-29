@@ -1,7 +1,4 @@
 .card-container{
-    border-width: 3px;
-    border-style: solid;
-    border-color: red;
     display: flex;
     flex-flow: row;
     justify-content: center;
