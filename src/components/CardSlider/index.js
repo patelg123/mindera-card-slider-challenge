@@ -100,4 +100,8 @@ CardSlider.propTypes = {
     numberOfCards: PropTypes.number
 };
 
+CardSlider.defaultProps = {
+    numberOfCards: 3
+};
+
 export default CardSlider;

@@ -65,23 +65,23 @@ class Card extends Component {
         let heartIcon  = (this.state.is_liked === true) ? heartIconFull : heartIconOutline;
 
         return (
-            <div className="card">
+            <div id="card" className="card">
                 <div>
-                    <a href={this.props.card.href}>
-                        <div className="card__img" >
+                    <a id="card__href" href={this.props.card.href}>
+                        <div id="card__img" className="card__img" >
                             <img src={this.getCardImage(this.props.card.id)} alt="card" />
                         </div>
-                        <div className="card__title">
+                        <div id="card__title" className="card__title">
                             {this.props.card.title}
                         </div>
-                        <div className="card__subtitle">
+                        <div id="card__subtitle" className="card__subtitle">
                             {this.props.card.subtitle}
                         </div>
-                        <div className="card__text" dangerouslySetInnerHTML={{__html: this.props.card.text }} />
+                        <div id="card__text" className="card__text" dangerouslySetInnerHTML={{__html: this.props.card.text }} />
                     </a>
                 </div>
                 <div className="card__text">
-                    <img src={heartIcon} alt="liked Or Not" onClick={() => this.handleLikeUpdate(this.props.card.id)} />
+                    <img id="heart__image" src={heartIcon} alt="liked Or Not" onClick={() => this.handleLikeUpdate(this.props.card.id)} />
                 </div>
             </div>
         );

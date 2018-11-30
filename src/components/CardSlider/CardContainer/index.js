@@ -7,7 +7,7 @@ class CardContainer extends Component {
 
     render() {
         return (
-            <div className="card-container">
+            <div id="card-container" className="card-container">
                 {
                     this.props.data.map(card => (
                         <Card key={card.id} card={card} />
@@ -20,6 +20,10 @@ class CardContainer extends Component {
 
 CardContainer.propTypes = {
     data: PropTypes.array.isRequired,
+};
+
+CardContainer.defaultProps = {
+    data: [],
 };
 
 export default CardContainer;
