@@ -7,7 +7,7 @@
       "text": "We act like humans, we talk like humans, and we think like humans. And we call out anyone who does the opposite.",
       "image_url": "https://picsum.photos/300/150/?random",
       "href": "https://mindera.com/people-and-culture/we-are-humans/",
-      "is_liked": false
+      "is_liked": true
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "text": "We insist on working collaborativelly. <strong>No rockstars</strong>. No departments. The whole owns the whole project together.",
       "image_url": "https://picsum.photos/300/150/?image=190",
       "href": "https://mindera.com/people-and-culture/we-work-together/",
-      "is_liked": true
+      "is_liked": false
     },
     {
       "id": 3,

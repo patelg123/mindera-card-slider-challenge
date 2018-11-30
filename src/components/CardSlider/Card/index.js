@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Card.css';
-import heart_icon_full from './images/heart_icon_full_small.png';
-import heart_icon_outline from './images/heart_icon_outline_small.png';
-import image_2 from './images/2.jpg';
-
-/*
-const image_2 = require('./images/2.jpg');
-const image_3 = require('./images/3.jpg');
-const image_4 = require('./images/4.jpg');
-const image_5 = require('./images/5.jpg');
-const image_6 = require('./images/6.jpg');
-const image_7 = require('./images/7.jpg');
-const image_8 = require('./images/8.jpg');
-const image_9 = require('./images/9.jpg');
-*/
+import heartIconFull from './images/heart_icon_full_small.png';
+import heartIconOutline from './images/heart_icon_outline_small.png';
+import weWorkTogether from './images/we_work_together.jpg';
 
 const restURL = 'http://localhost:3001/cards/';
 
@@ -29,15 +18,15 @@ class Card extends Component {
 
     getCardImage(id){
         switch(id) {
-        case(1) : return image_2;
-        case(2) : return image_2;
-        case(3) : return image_2;
-        case(4) : return image_2;
-        case(5) : return image_2;
-        case(6) : return image_2;
-        case(7) : return image_2;
-        case(8) : return image_2;
-        case(9) : return image_2;
+        case(1) : return weWorkTogether;
+        case(2) : return weWorkTogether;
+        case(3) : return weWorkTogether;
+        case(4) : return weWorkTogether;
+        case(5) : return weWorkTogether;
+        case(6) : return weWorkTogether;
+        case(7) : return weWorkTogether;
+        case(8) : return weWorkTogether;
+        case(9) : return weWorkTogether;
         default: return this.props.card.image_url;
         }
     }
@@ -45,10 +34,10 @@ class Card extends Component {
 
     handleLikeUpdate(id) {
 
-        let is_liked_value = (this.state.is_liked === true) ? false : true;
+        let isLikedValue = (this.state.is_liked === true) ? false : true;
 
         let data = {
-            is_liked: is_liked_value
+            is_liked: isLikedValue
         };
 
         fetch(restURL + id, {
@@ -60,7 +49,7 @@ class Card extends Component {
             .then(
                 () => {
                     this.setState({
-                        is_liked: is_liked_value
+                        is_liked: isLikedValue
                     });
                 },
                 (error) => {
@@ -73,7 +62,7 @@ class Card extends Component {
 
     render() {
 
-        let heart_icon  = (this.state.is_liked === true) ? heart_icon_full : heart_icon_outline;
+        let heartIcon  = (this.state.is_liked === true) ? heartIconFull : heartIconOutline;
 
         return (
             <div className="card">
@@ -92,7 +81,7 @@ class Card extends Component {
                     </a>
                 </div>
                 <div className="card__text">
-                    <img src={heart_icon} alt="liked Or Not" onClick={() => this.handleLikeUpdate(this.props.card.id)} />
+                    <img src={heartIcon} alt="liked Or Not" onClick={() => this.handleLikeUpdate(this.props.card.id)} />
                 </div>
             </div>
         );
